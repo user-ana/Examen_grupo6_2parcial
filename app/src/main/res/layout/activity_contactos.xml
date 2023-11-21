@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ContactosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAtras"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:backgroundTint="#3C6A3D"
+                android:text="Atras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#F6F4F4" />
+
+            <EditText
+                android:id="@+id/txtBuscarNombre"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="5"
+                android:ems="10"
+                android:hint="Buscar por Nombre"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="481dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/listaContactos"
+                    android:layout_width="354dp"
+                    android:layout_height="375dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:choiceMode="singleChoice">
+
+
+                </ListView>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#3C6A3D"
+                android:text="Eliminar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#F6F4F4" />
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#3C6A3D"
+                android:text="Actualizar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#F6F4F4" />
+
+            <Button
+                android:id="@+id/btnUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#3C6A3D"
+                android:text="Mapa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#F6F4F4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

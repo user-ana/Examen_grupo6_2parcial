@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="364dp"
+        android:backgroundTint="#8E8B8B"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/viewnombre"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="284dp"
+        android:backgroundTint="#8E8B8B"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/viewtelefono"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+        android:id="@+id/txtLatitud"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="212dp"
+        android:backgroundTint="#8E8B8B"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/viewlatitud"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+
+        android:id="@+id/txtLongitud"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="#8E8B8B"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/viewlongitud"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,LabelFor" />
+
+    <Button
+        android:id="@+id/btnContactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#3C6A3D"
+        android:text="Contactos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#F8F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#3C6A3D"
+        android:text="Guardar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#F8F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/foto_perfil"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <ImageButton
+        android:id="@+id/btntakefoto"
+        android:layout_width="71dp"
+        android:layout_height="76dp"
+        app:srcCompat="@drawable/camera"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <LinearLayout
+        android:layout_width="471dp"
+        android:layout_height="92dp"
+        android:background="@color/orange"
+
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints,VisualLintBounds">
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="251dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:text="@string/contactos_nelige_una_opcion"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/lgo"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
